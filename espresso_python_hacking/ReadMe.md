@@ -34,4 +34,3 @@ For the hacking session, please implement the following tasks:
 Just unzip the code and use.
 
 For any question, contact [Cataldo Azzariti](cataldo.azzariti@publicissapient.com) and [Akos](akos.fenemore@publicissapient.com).
-# data-science-learning

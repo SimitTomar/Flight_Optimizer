@@ -1,4 +1,5 @@
 import numpy as np
+from numpy import genfromtxt
 
 
 def identify_quant_cols(
@@ -10,14 +11,12 @@ def identify_quant_cols(
 
 def make_col_positive(data):
     # TODO: Add transformations here to make an entire dataframe column positive.
-    minval = data.min()
-    data = data + abs(minval)
+    minimum_val = data.min()
+    data = data + abs(minimum_val)
     return data
 
 
 def log_transform(data):
     # TODO: Add any code here to log transform an entire column.
     return np.log(data)
-
-
 
