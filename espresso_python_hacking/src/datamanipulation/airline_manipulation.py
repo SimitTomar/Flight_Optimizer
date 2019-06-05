@@ -64,9 +64,19 @@ if __name__ == "__main__":
 
     Please do not spend more than 3 hours on this.
     '''
-    flights_data = pd.read_csv("/Users/simtomar/Desktop/DataScience_Course/data-science-learning/espresso_python_hacking/data/flights_old.csv") # TODO: Import flight data
+
+    # Find the path of the data file
+    dataManipulationDirPath = os.path.dirname(os.path.abspath(__file__))
+    srcDirPath = os.path.dirname(dataManipulationDirPath)
+    espressoDirPath = os.path.dirname(srcDirPath)
+    dataFilePath = os.path.join(espressoDirPath, 'data', 'flights.csv')
+
+    # TODO: Import flight data
+    flights_data = pd.read_csv(dataFilePath)
     logger.info(flights_data)
     transformed = transform_data(flights_data)
+
+    # Plot Flight Data to infer Delay Patterns
     transformed.plot(x='ARRIVAL_TIME', y='ARRIVAL_DELAY', style='o')
     transformed.plot(x='DEPARTURE_TIME', y='ARRIVAL_DELAY', style='o')
     transformed.plot(x='DEPARTURE_DELAY_NORMALISED', y='ARRIVAL_DELAY', style='o')
