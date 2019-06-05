@@ -18,23 +18,24 @@ Session Split:
 * Late Aircraft Delay
 * Weather Delay
 
-#Impact of Departure Time
+# Impact of Departure Time
 The Departure Time impacts the Arrival Delay pretty Significantly.
 Flights departing during early morning are comparatively less delayed than the ones departing during regular morning hours
 
 ![imagePlots](imagePlots/DepartureTimeVsArrivalDelay.png)
 
-#Impact of Arrival Time
+# Impact of Arrival Time
 The Arrival Time impacts the Arrival Delay pretty Significantly.
 Flights arriving around day time (1400 hrs) are a bit more delayed than the ones arriving at mid night to early morning
 
 ![imagePlots](imagePlots/ArrivalTimeVsArrivalDelay.png)
 
-#Impact of Departure Delay
+# Impact of Departure Delay
 The Departure Delay impacts the Arrival Delay pretty Significantly.
 The Arrival Delay increases as the Departure Delay increases
 
 ![imagePlots](imagePlots/DepartureDelayVsArrivalDelay.png)
+
 
 
 ## Folder structure
